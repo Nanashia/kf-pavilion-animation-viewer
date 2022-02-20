@@ -1,6 +1,7 @@
 const webpack = require('webpack');
+const TerserPlugin = require('terser-webpack-plugin');
 
-module.exports = [
+const config = [
     {
         // メインとなるJavaScriptファイル（エントリーポイント）
         entry: `./src/index.js`,
@@ -11,19 +12,20 @@ module.exports = [
             // 出力ファイル名
             filename: 'index.js'
         },
-        // モード値を production に設定すると最適化された状態で、
-        // development に設定するとソースマップ有効でJSファイルが出力される
-        mode: "development",
         devServer: {
             static: ["dist"],
             open: true
         },
-        devtool: "eval-source-map",
-        plugins: [
-            // THREE.Scene などの形式で three.js のオブジェクトを使用できるようにする
-            new webpack.ProvidePlugin({
-                THREE : 'three/build/three'
-            }),
-        ]
     },
 ];
+
+module.exports = (env, argv) => {
+    if (argv.mode === 'development') {
+      config.devtool = 'eval-source-map';
+    }
+  
+    if (argv.mode === 'production') {
+    }
+  
+    return config;
+  };
