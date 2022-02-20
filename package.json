@@ -19,5 +19,9 @@
   "dependencies": {
     "three": "^0.137.5"
   },
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nanashia/kf-pavilion-animation-viewer.git"
+  }
 }
