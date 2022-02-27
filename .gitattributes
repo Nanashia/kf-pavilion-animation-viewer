@@ -1,0 +1,2 @@
+Texture2D/*.png filter=lfs diff=lfs merge=lfs -text
+GameObject filter=lfs diff=lfs merge=lfs -text
