@@ -5915,85 +5915,2626 @@
 	],
 	"models": [
 		{
-			"name": "010001001-001-l"
+			"name": "./GameObject/area_01/day.fbx"
 		},
 		{
-			"name": "010001001-001-r"
+			"name": "./GameObject/area_01/night.fbx"
 		},
 		{
-			"name": "010002001-001-l"
+			"name": "./GameObject/area_02/day.fbx"
 		},
 		{
-			"name": "010002001-001-r"
+			"name": "./GameObject/area_02/night.fbx"
 		},
 		{
-			"name": "010003001-001-l"
+			"name": "./GameObject/area_03/day.fbx"
 		},
 		{
-			"name": "010003001-001-r"
+			"name": "./GameObject/area_03/night.fbx"
 		},
 		{
-			"name": "010004001-001-l"
+			"name": "./GameObject/area_04/day.fbx"
 		},
 		{
-			"name": "010004001-001-r"
+			"name": "./GameObject/area_04/night.fbx"
 		},
 		{
-			"name": "010005001-001-l"
+			"name": "./GameObject/area_05/day.fbx"
 		},
 		{
-			"name": "010005001-001-r"
+			"name": "./GameObject/area_05/night.fbx"
 		},
 		{
-			"name": "010006001-001-l"
+			"name": "./GameObject/area_06/day.fbx"
 		},
 		{
-			"name": "010006001-001-r"
+			"name": "./GameObject/area_06/night.fbx"
 		},
 		{
-			"name": "010007001-001-l"
+			"name": "./GameObject/area_07/day.fbx"
 		},
 		{
-			"name": "010007001-001-r"
+			"name": "./GameObject/area_07/night.fbx"
 		},
 		{
-			"name": "010008001-001-l"
+			"name": "./GameObject/area_08/day.fbx"
 		},
 		{
-			"name": "010008001-001-r"
+			"name": "./GameObject/area_08/night.fbx"
 		},
 		{
-			"name": "010009001-001-l"
+			"name": "./GameObject/area_51/day.fbx"
 		},
 		{
-			"name": "010009001-001-r"
+			"name": "./GameObject/area_51/night.fbx"
 		},
 		{
-			"name": "ex_1"
+			"name": "./GameObject/area_52/day.fbx"
 		},
 		{
-			"name": "ex_2"
+			"name": "./GameObject/area_52/night.fbx"
 		},
 		{
-			"name": "ex_3"
+			"name": "./GameObject/area_sparkle/effect.fbx"
 		},
 		{
-			"name": "ex_4"
+			"name": "./GameObject/area_sparkle/tap-effect.fbx"
 		},
 		{
-			"name": "ex_5"
+			"name": "./GameObject/attraction_settings/Coin.fbx"
 		},
 		{
-			"name": "ex_6"
+			"name": "./GameObject/attraction_settings/FixWalker.fbx"
 		},
 		{
-			"name": "ex_7"
+			"name": "./GameObject/attraction_settings/ItemA.fbx"
 		},
 		{
-			"name": "ex_8"
+			"name": "./GameObject/attraction_settings/ItemA_big.fbx"
 		},
 		{
-			"name": "ex_9"
+			"name": "./GameObject/attraction_settings/ItemB.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/ItemB_big.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/ItemC.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/ItemC_big.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/ItemRandom.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/ItemRandomSameInLane.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/ItemRandom_big.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/Material.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/Obstacle.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/ObstacleBig.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/tree.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/VerticalWalker1.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/VerticalWalker2.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/Walker1.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/Walker2.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/Walker3.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner1.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner11.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner12.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner13.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner2.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner21.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner22.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner23.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner3.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner31.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner32.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner33.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/WalkerSpawner4.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/wall1.fbx"
+		},
+		{
+			"name": "./GameObject/attraction_settings/wall2.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010001001/010001001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010001001/010001001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010001001/ex_1.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010001001/ex_184.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010001001/ex_2.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010001001/ex_45.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010001002/010001002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010001002/010001002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010001002/ex_1001.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010002001/010002001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010002001/010002001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010002001/ex_218.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010002001/ex_3.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010002001/ex_4.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010002002/010002002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010002002/010002002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010002002/ex_1002.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010003001/010003001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010003001/010003001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010003001/ex_5.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010003002/010003002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010003002/010003002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010003002/ex_1003.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010004001/010004001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010004001/010004001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010004001/ex_6.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010004001/ex_7.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010004002/010004002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010004002/010004002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010004002/ex_1004.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010005001/010005001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010005001/010005001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010005001/ex_8.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010005002/010005002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010005002/010005002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010005002/ex_1017.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010006001/010006001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010006001/010006001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010006001/ex_9.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010006002/010006002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010006002/010006002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010006002/ex_1024.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010007001/010007001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010007001/010007001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010007001/ex_11.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010007001/ex_12.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010007002/010007002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010007002/010007002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010007002/ex_1005.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010008001/010008001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010008001/010008001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010008001/ex_13.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010008002/010008002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010008002/010008002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010008002/ex_1006.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010009001/010009001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010009001/010009001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010009001/ex_14.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010010001/010010001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010010001/010010001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010010001/ex_15.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010011001/010011001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010011001/010011001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010011001/010011001-004-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010011001/ex_16.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010011002/010011002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010011002/010011002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010011002/ex_1007.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010012001/010012001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010012001/010012001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010012001/ex_17.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010012002/010012002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010012002/010012002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010012002/ex_1008.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010013001/010013001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010013001/010013001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010013001/ex_18.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010013002/010013002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010013002/010013002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010013002/ex_1025.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010014001/010014001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010014001/010014001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010014001/ex_19.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010015001/010015001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010015001/010015001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010015001/010015001-004-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010015001/010015001-004-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010015001/ex_20.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010015002/010015002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010015002/010015002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010015002/ex_1018.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010016001/010016001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010016001/010016001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010016001/ex_21.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010016002/010016002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010016002/010016002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010016002/ex_1019.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010017001/010017001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010017001/010017001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010017001/ex_22.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010017002/010017002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010017002/010017002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010017002/ex_1026.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010018001/010018001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010018001/010018001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010018001/ex_23.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010018002/010018002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010018002/010018002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010018002/ex_1020.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010019001/010019001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010019001/010019001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010019001/ex_24.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010019002/010019002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010019002/010019002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010019002/ex_1021.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010020001/010020001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010020001/010020001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010020001/ex_25.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010021001/010021001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010021001/010021001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010021001/ex_26.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010022001/010022001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010022001/010022001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010022001/ex_27.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010023001/010023001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010023001/010023001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010023001/ex_28.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010024001/010024001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010024001/010024001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010024001/ex_29.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010025001/010025001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010025001/010025001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010025001/ex_30.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010026001/010026001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010026001/010026001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010026001/010026001-005-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010026001/ex_31.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010027001/010027001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010027001/010027001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010027001/ex_34.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010027002/010027002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010027002/010027002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010027002/ex_1009.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010028001/010028001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010028001/010028001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010028001/ex_35.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010028002/010028002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010028002/010028002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010028002/ex_1010.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010029001/010029001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010029001/010029001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010029001/ex_36.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010030001/010030001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010030001/010030001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010030001/ex_37.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010030002/010030002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010030002/010030002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010030002/ex_1011.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010031001/010031001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010031001/010031001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010031001/ex_38.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010032001/010032001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010032001/010032001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010032001/ex_39.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010033001/010033001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010033001/010033001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010033001/ex_40.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010034001/010034001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010034001/010034001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010034001/ex_41.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010034002/010034002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010034002/010034002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010034002/ex_1012.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010035001/010035001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010035001/010035001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010035001/010035001-004-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010035001/010035001-005-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010035001/ex_42.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010035001/ex_43.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010035002/010035002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010035002/010035002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010035002/ex_1013.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010036001/010036001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010036001/010036001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010036001/ex_44.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010036002/010036002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010036002/010036002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010036002/ex_1014.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010036002/ex_1014kai.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010037001/010037001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010037001/010037001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010037001/ex_49.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010038001/010038001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010038001/010038001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010038001/ex_50.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010039001/010039001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010039001/010039001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010039001/ex_46.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010040001/010040001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010040001/010040001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010040001/ex_47.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010040002/010040002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010040002/010040002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010040002/ex_1015.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010041001/010041001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010041001/010041001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010041001/ex_125.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010041001/ex_48.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010042001/010042001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010042001/010042001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010042001/ex_51.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010043001/010043001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010043001/010043001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010043001/ex_52.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010044001/010044001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010044001/010044001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010044001/ex_53.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010045001/010045001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010045001/010045001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010045001/ex_54.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010046001/010046001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010046001/010046001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010046001/ex_55.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010047001/010047001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010047001/010047001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010047001/ex_56.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010048001/010048001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010048001/010048001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010048001/ex_57.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010049001/010049001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010049001/010049001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010049001/ex_74.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010050001/010050001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010050001/010050001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010050001/ex_59.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010051001/010051001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010051001/010051001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010051001/ex_63.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010052001/010052001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010052001/010052001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010052001/ex_61.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010053001/010053001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010053001/010053001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010053001/ex_62.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010054001/010054001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010054001/010054001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010054001/ex_60.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010055001/010055001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010055001/010055001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010055001/ex_58.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010056001/010056001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010056001/010056001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010056001/ex_135.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010057001/010057001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010057001/010057001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010057001/ex_73.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010058001/010058001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010058001/010058001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010058001/ex_76.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010059001/010059001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010059001/010059001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010059001/ex_134.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010059001/ex_64.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010060001/010060001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010060001/010060001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010060001/ex_65.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010061001/010061001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010061001/010061001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010061001/ex_66.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010062001/010062001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010062001/010062001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010062001/ex_67.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010063001/010063001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010063001/010063001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010063001/ex_68.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010063001/ex_98.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010064001/010064001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010064001/010064001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010064001/ex_69.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010065001/010065001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010065001/010065001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010065001/ex_70.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010066001/010066001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010066001/010066001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010066001/ex_71.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010067001/010067001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010067001/010067001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010067001/ex_72.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010068001/010068001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010068001/010068001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010068001/ex_75.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010069001/010069001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010069001/010069001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010069001/ex_77.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010070001/010070001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010070001/010070001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010070001/ex_80.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010071001/010071001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010071001/010071001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010071001/ex_81.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010072001/010072001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010072001/010072001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010072001/ex_82.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010073001/010073001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010073001/010073001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010073001/ex_83.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010074001/010074001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010074001/010074001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010074001/ex_84.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010075001/010075001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010075001/010075001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010075001/ex_85.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010076001/010076001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010076001/010076001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010076001/ex_86.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010077001/010077001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010077001/010077001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010077001/ex_87.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010078001/010078001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010078001/010078001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010078001/ex_88.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010079001/010079001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010079001/010079001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010079001/ex_79.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010080001/010080001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010080001/010080001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010080001/ex_78.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010080001/ex_78kai.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010081001/010081001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010081001/010081001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010081001/ex_89.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010082001/010082001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010082001/010082001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010082001/ex_90.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010083001/010083001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010083001/010083001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010083001/ex_91.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010084001/010084001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010084001/010084001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010084001/ex_92.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010085001/010085001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010085001/010085001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010085001/ex_93.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010086001/010086001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010086001/010086001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010086001/ex_94.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010086002/010086002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010086002/010086002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010086002/ex_1022.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010087001/010087001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010087001/010087001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010087001/ex_95.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010088001/010088001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010088001/010088001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010088001/ex_96.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010089001/010089001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010089001/010089001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010089001/ex_97.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010090001/010090001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010090001/010090001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010090001/ex_99.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010091002/010091002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010091002/010091002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010091002/ex_1016.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010092001/010092001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010092001/010092001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010092001/ex_100.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010093001/010093001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010093001/010093001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010093001/ex_102.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010094001/010094001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010094001/010094001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010094001/ex_103.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010095001/010095001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010095001/010095001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010095001/ex_104.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010096001/010096001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010096001/010096001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010096001/ex_105.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010097001/010097001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010097001/010097001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010097001/ex_106.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010098001/010098001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010098001/010098001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010098001/ex_107.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010099001/010099001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010099001/010099001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010099001/ex_108.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010100001/010100001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010100001/010100001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010100001/ex_109.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010101001/010101001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010101001/010101001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010101001/ex_110.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010102001/010102001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010102001/010102001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010102001/ex_111.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010103001/010103001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010103001/010103001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010103001/ex_112.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010104001/010104001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010104001/010104001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010104001/ex_101.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010105001/010105001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010105001/010105001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010105001/ex_113.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010106001/010106001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010106001/010106001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010106001/ex_114.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010107001/010107001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010107001/010107001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010107001/ex_115.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010108001/010108001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010108001/010108001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010108001/ex_116.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010109001/010109001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010109001/010109001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010109001/ex_117.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010110001/010110001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010110001/010110001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010110001/ex_118.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010111001/010111001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010111001/010111001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010111001/ex_119.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010112001/010112001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010112001/010112001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010112001/ex_120.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010113001/010113001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010113001/010113001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010113001/ex_121.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010114001/010114001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010114001/010114001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010114001/ex_122.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010115001/010115001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010115001/010115001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010115001/ex_123.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010116001/010116001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010116001/010116001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010116001/ex_124.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010117001/010117001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010117001/010117001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010117001/ex_126.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010118001/010118001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010118001/010118001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010118001/ex_127.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010119001/010119001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010119001/010119001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010119001/ex_128.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010120001/010120001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010120001/010120001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010120001/ex_129.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010121001/010121001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010121001/010121001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010121001/ex_130.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010122001/010122001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010122001/010122001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010122001/ex_131.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010123001/010123001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010123001/010123001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010123001/ex_132.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010124001/010124001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010124001/010124001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010124001/ex_133.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010125001/010125001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010125001/010125001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010125001/ex_136.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010126001/010126001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010126001/010126001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010126001/ex_137.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010127001/010127001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010127001/010127001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010127001/ex_138.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010128001/010128001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010128001/010128001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010128001/ex_139.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010129001/010129001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010129001/010129001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010129001/ex_140.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010130001/010130001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010130001/010130001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010130001/ex_141.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010131001/010131001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010131001/010131001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010131001/ex_142.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010132001/010132001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010132001/010132001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010132001/ex_143.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010133001/010133001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010133001/010133001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010133001/ex_144.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010134001/010134001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010134001/010134001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010134001/ex_145.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010135001/010135001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010135001/010135001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010135001/ex_146.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010136001/010136001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010136001/010136001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010136001/ex_147.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010137001/010137001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010137001/010137001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010137001/ex_148.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010138001/010138001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010138001/010138001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010138001/ex_149.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010139001/010139001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010139001/010139001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010139001/ex_150.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010140001/010140001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010140001/010140001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010140001/ex_151.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010141001/010141001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010141001/010141001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010141001/ex_152.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010142001/010142001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010142001/010142001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010142001/ex_153.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010143001/010143001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010143001/010143001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010143001/ex_154.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010144001/010144001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010144001/010144001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010144001/ex_155.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010145001/010145001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010145001/010145001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010145001/ex_156.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010146001/010146001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010146001/010146001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010146001/ex_157.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010147001/010147001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010147001/010147001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010147001/ex_158.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010148001/010148001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010148001/010148001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010148001/ex_159.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010149001/010149001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010149001/010149001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010149001/ex_160.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010150001/010150001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010150001/010150001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010150001/ex_161.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010151001/010151001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010151001/010151001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010151001/ex_162.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010152001/010152001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010152001/010152001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010152001/ex_163.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010153001/010153001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010153001/010153001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010153001/ex_164.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010154001/010154001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010154001/010154001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010154001/ex_165.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010155001/010155001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010155001/010155001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010155001/ex_166.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010156001/010156001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010156001/010156001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010156001/ex_167.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010157001/010157001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010157001/010157001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010157001/ex_168.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010158001/010158001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010158001/010158001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010158001/ex_169.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010159001/010159001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010159001/010159001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010159001/ex_170.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010160001/010160001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010160001/010160001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010160001/ex_171.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010161001/010161001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010161001/010161001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010161001/ex_172.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010162001/010162001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010162001/010162001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010162001/ex_173.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010163001/010163001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010163001/010163001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010163001/ex_174.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010164001/010164001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010164001/010164001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010164001/ex_175.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010165001/010165001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010165001/010165001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010165001/ex_176.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010166001/010166001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010166001/010166001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010166001/ex_177.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010167001/010167001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010167001/010167001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010167001/ex_178.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010168001/010168001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010168001/010168001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010168001/ex_179.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010169001/010169001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010169001/010169001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010169001/ex_180.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010170001/010170001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010170001/010170001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010170001/ex_181.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010171001/010171001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010171001/010171001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010171001/ex_182.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010172001/010172001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010172001/010172001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010172001/ex_183.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010173001/010173001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010173001/010173001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010173001/ex_185.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010174001/010174001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010174001/010174001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010174001/ex_186.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010175001/010175001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010175001/010175001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010175001/ex_187.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010176001/010176001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010176001/010176001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010176001/ex_188.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010177001/010177001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010177001/010177001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010177001/ex_189.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010178001/010178001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010178001/010178001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010178001/ex_190.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010179001/010179001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010179001/010179001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010179001/ex_191.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010180001/010180001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010180001/010180001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010180001/ex_192.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010181001/010181001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010181001/010181001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010181001/ex_193.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010182001/010182001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010182001/010182001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010182001/ex_194.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010183001/010183001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010183001/010183001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010183001/ex_195.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010184001/010184001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010184001/010184001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010184001/ex_196.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010185001/010185001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010185001/010185001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010185001/ex_197.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010186001/010186001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010186001/010186001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010186001/ex_198.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010187001/010187001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010187001/010187001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010187001/ex_199.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010188001/010188001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010188001/010188001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010189001/010189001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010189001/010189001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010189001/ex_201.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010190001/010190001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010190001/010190001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010190001/ex_202.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010191001/010191001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010191001/010191001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010191001/ex_203.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010192001/010192001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010192001/010192001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010192001/ex_204.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010193001/010193001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010193001/010193001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010193001/ex_205.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010194001/010194001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010194001/010194001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010194001/ex_206.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010195001/010195001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010195001/010195001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010195001/ex_207.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010196001/010196001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010196001/010196001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010196001/ex_208.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010197001/010197001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010197001/010197001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010197001/ex_209.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010198001/010198001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010198001/010198001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010198001/ex_210.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010199001/010199001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010199001/010199001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010199001/ex_211.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010200001/010200001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010200001/010200001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010200001/ex_212.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010201002/010201002-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010201002/010201002-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010201002/ex_1023.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010202001/010202001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010202001/010202001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010202001/ex_213.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010203001/010203001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010203001/010203001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010203001/ex_214.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010204001/010204001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010204001/010204001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010204001/ex_215.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010205001/010205001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010205001/010205001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010205001/ex_216.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010206001/010206001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010206001/010206001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010206001/ex_217.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010207001/010207001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010207001/010207001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010207001/ex_219.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010208001/010208001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010208001/010208001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010208001/ex_220.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010209001/010209001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010209001/010209001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010209001/ex_221.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010210001/010210001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010210001/010210001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010210001/ex_222.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010211001/010211001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010211001/010211001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010211001/ex_223.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010212001/010212001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010212001/010212001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010212001/ex_224.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010213001/010213001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010213001/010213001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010213001/ex_225.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010214001/010214001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010214001/010214001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010214001/ex_226.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010215001/010215001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010215001/010215001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010215001/ex_227.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010216001/010216001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010216001/010216001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010216001/ex_228.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010217001/010217001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010217001/010217001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010217001/ex_229.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010218001/010218001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010218001/010218001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010218001/ex_230.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010219001/010219001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010219001/010219001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010219001/ex_231.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010220001/010220001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010220001/010220001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010220001/ex_232.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010221001/010221001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010221001/010221001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010221001/ex_233.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010222001/010222001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010222001/010222001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010222001/ex_234.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010223001/010223001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010223001/010223001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010223001/ex_235.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010224001/010224001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010224001/010224001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010224001/ex_236.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010225001/010225001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010225001/010225001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010225001/ex_237.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010226001/010226001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010226001/010226001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010226001/ex_238.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010227001/010227001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010227001/010227001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010227001/ex_239.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010228001/010228001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010228001/010228001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010228001/ex_240.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010229001/010229001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010229001/010229001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010229001/ex_241.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010230001/010230001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010230001/010230001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010230001/ex_242.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010231001/010231001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010231001/010231001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010231001/ex_243.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010232001/010232001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010232001/010232001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010232001/ex_244.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010233001/010233001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010233001/010233001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010233001/ex_245.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010234001/010234001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010234001/010234001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010234001/ex_246.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010235001/010235001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010235001/010235001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010235001/ex_247.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010236001/010236001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010236001/010236001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010236001/ex_248.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010237001/010237001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010237001/010237001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010237001/ex_249.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010238001/010238001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010238001/010238001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010238001/ex_250.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010239001/010239001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010239001/010239001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010239001/ex_251.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010240001/010240001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010240001/010240001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010240001/ex_252.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010241001/010241001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010241001/010241001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010241001/ex_253.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010242001/010242001-001-l.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010242001/010242001-001-r.fbx"
+		},
+		{
+			"name": "./GameObject/friend_010242001/ex_254.fbx"
+		},
+		{
+			"name": "./GameObject/friend_020001001/020001001.fbx"
 		}
 	]
 }
