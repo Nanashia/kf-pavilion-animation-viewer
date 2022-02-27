@@ -1,5 +1,4 @@
-index.js
-index.json
 *.fbx
+GameObject/*/*.png
 Animator/*/*.png
 Animator/main.json
