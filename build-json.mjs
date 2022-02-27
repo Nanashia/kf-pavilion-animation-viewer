@@ -50,15 +50,23 @@ for(const extend of friend_motion_extends) {
     }
 }
 
-const dirents = fs.readdirSync(new URL('./dist/Animator', import.meta.url), { withFileTypes: true });
-const models = dirents
+const dirents2 = fs.readdirSync(new URL('./dist/GameObject', import.meta.url), { withFileTypes: true });
+const names = dirents2
     .filter(dirent => dirent.isDirectory())
-    .map(({ name }) => ({ name }))
+    .map(({ name }) => name)
+const models2 = []
+for(const name of names) {
+    const dirents3 = fs.readdirSync(new URL('./dist/GameObject/' + name, import.meta.url), { withFileTypes: true });
+    for(const dirent3 of dirents3)
+    if(dirent3.isFile() && dirent3.name.endsWith(".fbx")) {
+        models2.push({ name: './GameObject/' + name + "/" + dirent3.name })
+    }
+}
 
 const result = {
     toys,
     friends,
     friend_motion_extends,
-    models,
+    models: models2,
 };
 fs.writeFileSync(new URL('./dist/index.json', import.meta.url), JSON.stringify(result, null, '\t'));

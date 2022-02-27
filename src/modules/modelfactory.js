@@ -160,10 +160,11 @@ export class ModelFactory {
 
         const cachedTextures = new Map()
 
-        const createMaterial = async (texname) => {
+        const createMaterial = async (texname, alphatexname) => {
             var cachedTexture = undefined //cachedTextures.get(texname);
-            var tex
-            var mat
+            var tex = undefined
+            var atex = null
+            var mat = undefined
             if(cachedTexture == undefined) {
                 const texturePath = './Texture2D/' + texname + '.png';
                 const texture = await new Promise((resolve,reject) => { 
@@ -180,6 +181,22 @@ export class ModelFactory {
                 
                 cachedTextures.set(texname, texture)
                 tex = texture
+
+                if(alphatexname != null) {
+                    const alphatexturePath = './Texture2D/' + alphatexname + '.png';
+                    const alphatexture = await new Promise((resolve,reject) => { 
+                        this.textureLoader.load(alphatexturePath, 
+                            function ( object ) { resolve(object) }, 
+                            undefined, 
+                            ( error ) => { console.error( error ); reject(error) }
+                        )
+                    });
+                    console.info("texture loaded: ", alphatexturePath)
+                    texture.encoding = THREE.sRGBEncoding;
+                    alphatexture.name = alphatexname
+                    alphatexture.flipY = true 
+                    atex = alphatexture
+                }
             } else {
                 tex = cachedTexture.clone()
             }
@@ -201,6 +218,7 @@ export class ModelFactory {
             } else {
                 const material = new THREE.MeshBasicMaterial({
                     map: tex, 
+                    alphaMap: atex,
                     color: 0xffffff,
                     transparent: true,
                     side: THREE.DoubleSide,
@@ -218,7 +236,11 @@ export class ModelFactory {
         }
 
         const instantiateSprite = async (object3d, sprite) => {
-            const [mat, tex] = await createMaterial(sprite.m_RD.texture2d.m_Name + "_" + sprite.m_RD.texture.m_PathID.toString().substr(0, 5))
+            var at = undefined
+            if(sprite.m_RD.alphaTexture2d != null) {
+                at = sprite.m_RD.alphaTexture2d.m_Name + "_" + sprite.m_RD.alphaTexture2d.m_PathID.toString().substr(0, 5)
+            }
+            const [mat, tex] = await createMaterial(sprite.m_RD.texture2d.m_Name + "_" + sprite.m_RD.texture.m_PathID.toString().substr(0, 5), at)
             const material3 = mat
             
             var rect = sprite.m_RD.textureRect;
@@ -307,6 +329,11 @@ export class ModelFactory {
                 clearMesh.userData.renderOrder = clearOrder
                 s.add(clearMesh)
                 
+            }
+
+            if(s.name == "friends_shadow") {
+                // ???
+                s.scale.set(0.25, 0.25, 1)
             }
 /*
             //s.name = name;
@@ -423,10 +450,8 @@ export class ModelFactory {
                     continue
                 }
                 const targetObject3D = getObject3DByPath(o, path)
-                if(spriteData.foranim === true) {
-                    const s = await instantiateSprite(targetObject3D, spriteData.sprite);
-                    s.visible = false
-                }
+                const s = await instantiateSprite(targetObject3D, spriteData.sprite);
+                s.visible = false
             }
             
             console.groupEnd()
@@ -495,7 +520,7 @@ export class ModelFactory {
                 s = '\t' + s;
                 obj2 = obj2.parent;
             }
-            console.info(`${s} "${obj.name}" <${obj.type}> ${obj.visible? "": "hidden"}`);
+            console.info(`${s} "${obj.name}" <${obj.type}> ${obj.visible? "": "hidden"} ${getBonePathByObject3D(obj)}`);
         } );
         console.groupEnd()
 
@@ -511,7 +536,7 @@ export class ModelFactory {
 
             const clip = value
             const map = value.pptrCurveMapping            
-            console.groupCollapsed(`============  clip: ${key} ================`)
+            console.group(`============  clip: ${key} ================`)
             console.debug("pptrCurveMapping:", map)
 
             for(const [targets, track] of Object.entries(value.tracks)) {
@@ -527,7 +552,7 @@ export class ModelFactory {
                 const keys = new Map();
                 var priv = undefined
                 for(const keyframe of track.keyframes) {
-                    if(keyframe.binding.typeID === 212) {
+                    if(keyframe.binding.typeID === 212 && keyframe.binding.isPPtrCurve === 1) {
                         const key = targetPath + "/" + map[keyframe.value] + ".visible"
 
                         if(priv == undefined) {
@@ -568,7 +593,7 @@ export class ModelFactory {
 
                 for(const keyframe of track.keyframes) {
                     const time = keyframe.time
-                    if(keyframe.binding.typeID === 212) {
+                    if(keyframe.binding.typeID === 212 && keyframe.binding.isPPtrCurve === 1) {
                         const key = targetPath + "/" + map[keyframe.value] + ".visible"
                         const t = keys.get(key)
                         
@@ -577,9 +602,32 @@ export class ModelFactory {
                         
                         t.times.push(time)
                         t.values.push(true)
-                        console.debug(`t=${time} keyframe 212 key=${key} -> ${keyframe.value}`)
+                        //console.debug(`t=${time} keyframe[sprite] key=${key} -> ${keyframe.value}(=${map[keyframe.value]})`)
 
                         priv = t
+                        
+                    } else if(keyframe.binding.typeID === 212 && keyframe.binding.isPPtrCurve === 0) {
+                        const key = getBonePathByObject3D(targetObj.userData.defaultSprite) + ".material.opacity";
+                        //const key = targetObj.userData.defaultSprite.uuid + ".material.opacity";
+
+                        if(!keys.has(key)) {
+                            const n = {
+                                times: [],
+                                values: [],
+                                type: "int_linear",
+                            }
+                            if(time !== 0) {
+                                n.times.push(0)
+                                n.values.push(1.0)
+                                console.debug(`t=${0} keyframe[opacity]/0f key=${key} val=${n.values[0]}`)
+                            }
+                            keys.set(key, n)
+                        }
+
+                        const t = keys.get(key)
+                        t.times.push(time)
+                        t.values.push(keyframe.value)
+                        console.debug(`t=${time} keyframe[opacity] key=${key} -> ${keyframe.value}`)
                         
                     } else if((keyframe.binding.typeID === 1 && keyframe.binding.attribute === 2086281974)/* ||
                         (keyframe.binding.typeID === 210 && keyframe.binding.attribute == 3305885265)*/) {
@@ -593,7 +641,7 @@ export class ModelFactory {
                             if(time !== 0) {
                                 n.times.push(0)
                                 n.values.push(targetObj.visible)
-                                console.warn(`t=${0} keyframe1 0 val=${targetObj.visible} ${key}`)
+                                console.debug(`t=${0} keyframe[visible] 0 val=${targetObj.visible} ${key}`)
                             }
                             keys.set(key, n)
                         }
@@ -607,7 +655,7 @@ export class ModelFactory {
                             t.values.push(false)
                         } 
                         
-                        console.debug(`t=${time} keyframe 1 2086 key=${key} attr=${keyframe.binding.attribute} val=${keyframe.value}`)
+                        console.debug(`t=${time} keyframe[visible] key=${key} attr=${keyframe.binding.attribute} val=${keyframe.value}`)
 
                     } else if(keyframe.binding.typeID === 4 && keyframe.binding.attribute === 3) {
                         const x = targetPath + ".scale[y]";
@@ -622,7 +670,7 @@ export class ModelFactory {
                                 t.times.push(time)
                                 t.values.push(targetObj.scale.y)
                             }
-                            console.debug(`t=${time} keyframe scale0 key=${x} val=${targetObj.scale.y}`)
+                            //console.debug(`t=${time} keyframe[scale0] key=${x} val=${targetObj.scale.y}`)
                         }
                         const t = keys.get(x)
                         
@@ -631,38 +679,129 @@ export class ModelFactory {
                         t.values.push(keyframe.value2)
                         //t.values.push(keyframe.value3)
                         
-                        console.debug(`t=${time} keyframe  scale key=${x} -> val=${keyframe.value},${keyframe.value2},${keyframe.value3}`)
+                        console.debug(`t=${time} keyframe[scale] key=${x} -> val=${keyframe.value},${keyframe.value2},${keyframe.value3}`)
 
+                    } else if(keyframe.binding.typeID === 4 && keyframe.binding.attribute === 1) {
+                        if(false) {
+
+                            const x = targetPath + ".position";
+                            if(!keys.has(x)) {
+                                const t = {
+                                    times: [],
+                                    values: [],
+                                    type: "vector",
+                                }
+                                keys.set(x, t)
+                                /*if(time !== 0) {
+                                    t.times.push(time)
+                                    t.values.push(targetObj.scale.y)
+                                    t.values.push(targetObj.scale.y)
+                                    t.values.push(targetObj.scale.y)
+                                }*/
+                            }
+                            const t = keys.get(x)
+                            
+                            t.times.push(time)
+                            t.values.push(keyframe.value / fbxCfactor)
+                            t.values.push(keyframe.value2 / fbxCfactor)
+                            t.values.push(keyframe.value3 / fbxCfactor)
+                        }
+                        //console.debug(`t=${time} keyframe[translate] key=${targets2} val=${keyframe.value},${keyframe.value2},${keyframe.value3} type=${keyframe.binding.typeID} attr=${keyframe.binding.attribute}`)
+                    } else if(keyframe.binding.typeID === 4 && keyframe.binding.attribute === 4) {
+                        if(false) {
+                            const x = targetPath + ".quaternion";
+                            if(!keys.has(x)) {
+                                const t = {
+                                    times: [],
+                                    values: [],
+                                    type: "quat",
+                                }
+                                keys.set(x, t)
+                                /*if(time !== 0) {
+                                    t.times.push(time)
+                                    t.values.push(targetObj.scale.y)
+                                }*/
+                            }
+                            const t = keys.get(x)
+                                            
+                            const c1 = Math.cos( keyframe.value  * Math.PI / 180 / 2 );
+                            const c2 = Math.cos( keyframe.value2 * Math.PI / 180 / 2 );
+                            const c3 = Math.cos( keyframe.value3 * Math.PI / 180 / 2 );
+                            const s1 = Math.sin( keyframe.value  * Math.PI / 180 / 2 );
+                            const s2 = Math.sin( keyframe.value2 * Math.PI / 180 / 2 );
+                            const s3 = Math.sin( keyframe.value3 * Math.PI / 180 / 2 );
+                            t.times.push(time)
+                            t.values.push(s1 * c2 * c3 + c1 * s2 * s3)
+                            t.values.push(c1 * s2 * c3 - s1 * c2 * s3)
+                            t.values.push(c1 * c2 * s3 + s1 * s2 * c3)
+                            t.values.push(c1 * c2 * c3 - s1 * s2 * s3)
+                        }
+                        //console.debug(`t=${time} keyframe[rotation] key=${targets2} val=${keyframe.value},${keyframe.value2},${keyframe.value3} type=${keyframe.binding.typeID} attr=${keyframe.binding.attribute}`)
+                    } else if(keyframe.binding.typeID === 4 && keyframe.binding.attribute === 2) {
+                        //console.debug(`t=${time} keyframe[transform] key=${targets2} val=${keyframe.value},${keyframe.value2},${keyframe.value3} type=${keyframe.binding.typeID} attr=${keyframe.binding.attribute}`)
+                        
                     } else {
-                        console.warn(`t=${time} keyframe??? key=${targets2} val=${keyframe.value},${keyframe.value2},${keyframe.value3} type=${keyframe.binding.typeID} attr=${keyframe.binding.attribute}`)
+                        console.warn(`t=${time} keyframe[???] key=${targets2} val=${keyframe.value},${keyframe.value2},${keyframe.value3} type=${keyframe.binding.typeID} attr=${keyframe.binding.attribute}`)
                     }
                     
                 }
- 
-                
+
                 for(const [key, value] of keys.entries()) {
-                    const name = key.substr(0, key.lastIndexOf('.'))
-                    var keyname = key
+                    const name = key.substr(0, key.indexOf('.', key.lastIndexOf('/')))
+                    const attribute = key.substr(key.indexOf('.', key.lastIndexOf('/')))
                     
-                    const path = getObject3DByPath(o, name)
-                    if(path != undefined) {
-                        console.debug(`KEY: ${key} -> ${keyname}`, value)
+                    const obj = getObject3DByPath(o, name)
+                    if(obj != undefined) {
+                        const path = obj.uuid + "" + attribute
+                        console.debug(`KEY: ${name}${attribute} -> ${path}`, value)
                         if(value.type == "bool") {
-                            a.tracks.push(new THREE.BooleanKeyframeTrack(keyname, value.times, value.values))
+                            a.tracks.push(new THREE.BooleanKeyframeTrack(path, value.times, value.values))
                         } else if(value.type === "int") {
-                            a.tracks.push(new THREE.NumberKeyframeTrack(keyname, value.times, value.values, THREE.InterpolateDiscrete))
+                            a.tracks.push(new THREE.NumberKeyframeTrack(path, value.times, value.values, THREE.InterpolateDiscrete))
+                        } else if(value.type === "int_linear") {
+                            a.tracks.push(new THREE.NumberKeyframeTrack(path, value.times, value.values, THREE.InterpolateLinear))
+                        } else if(value.type === "vector") {
+                            a.tracks.push(new THREE.VectorKeyframeTrack(path, value.times, value.values, THREE.InterpolateLinear))
+                        } else if(value.type === "quat") {
+                            a.tracks.push(new THREE.QuaternionKeyframeTrack(path, value.times, value.values, THREE.InterpolateLinear))
                         }
                         a.resetDuration()
                         console.log("durations: ", a.duration, clip.duration)
+                        /*
                         a.duration = Math.max(a.duration, clip.duration || 0)
                         if(a.duration == NaN) {
                             throw new Error("a.duration is Nan")
                         }
+                        */
                     } else {
                         console.error(`${name} does not exist ${key}`, value)
                     }
                 }  
             }
+
+            if(a.tracks.size === 0 && map.length === 1) {
+                const defaultKey = getBonePathByObject3D(targetObj.userData.defaultSprite) + ".visible";
+                const initKey = targetPath + "/" + map[0] + ".visible"
+
+                if(defaultKey !== initKey) {
+                    const v = {
+                        times: [0],
+                        values: [false],
+                        type: "bool",
+                    }
+                    keys.set(defaultKey, v)
+                    console.debug(`t=${0} keyframe 212 default key=${defaultKey} -> ${false}`)
+                }
+
+                priv = {
+                    times: [0],
+                    values: [true],
+                    type: "bool",
+                }
+                keys.set(initKey, priv)
+                console.debug(`t=${0} keyframe 212 [-1] key=${initKey} -> true (=${map[0]})`)
+            }
+            
             
             console.groupEnd()
         }

@@ -21,6 +21,7 @@ export class CanvasController {
 	gui
 
 	canvasOptions = {
+		currentModel: "",
 		showGrid: true,
 		showAxis: true,
 		showSkelton: false,
@@ -54,13 +55,14 @@ export class CanvasController {
 		this.setUpHelpers()
 
 		const indexJson = await (await fetch("./index.json")).json();
+		const mainJson = await (await fetch("./GameObject/main.json")).json();
+		this.canvasOptions.currentModel = "./GameObject/" + mainJson.path + ".glb"
 		this.setUpModelSelectorGui(indexJson)
 		this.indexJson = indexJson
 
 		this.animate()
 
-		const mainJson = await (await fetch("./Animator/main.json")).json();
-		this.loadModel(mainJson.name)
+		this.loadModel("./GameObject/" + mainJson.path + ".glb")
 
 	}
 
@@ -68,6 +70,9 @@ export class CanvasController {
 	setUpModelSelectorGui(indexJson) {
 		const gui = this.gui.addFolder('Models')
 		this.modelFolder = gui;
+		this.modelFolder.add(this.canvasOptions, "currentModel")
+			.name("File name")
+			.onFinishChange((v) => { this.loadModel(v) })
 
 		const models = indexJson.models
 		/*
@@ -120,46 +125,47 @@ export class CanvasController {
 			controls.push({
 				obj,
 				name: param.name,
-				label: param.label,
+				label: param.label || param.name,
 				sortKey: param.sortKey ?? "",
 			})
 		}
 
 		for(const model of models) {
-			if(model.name.startsWith("ex_")) {
+			if(model.name.match("/ex_([0-9]+)")) {
 				const number = parseInt(model.name.match(/ex_([0-9]+)/)[1])
-				const name = indexJson.friend_motion_extends.find(s => s.id === number).name
+				const name_ = indexJson.friend_motion_extends.find(s => s.id === number)
+				const name = name_?.name || model.name
 				addFolder({	
 					name: model.name,
 					key: "ex_",
 					folderLabel: "　★ Special (Extend motions)",
 					label: `　${number}. ${name}`,
-					step: 20,
+					step: 10,
 					sortKey: number,
 				})
-			} else if(model.name.startsWith("great_")) {
+			} else if(model.name.match("/great_")) {
 				addFolder({	
 					name: model.name,
 					key: "great_",
 					folderLabel: "　★ Great Toy Motions",
 					label: model.name,
 				})
-			} else if(model.name.endsWith("-obj")) {
+			} else if(model.name.match("-obj")) {
 				addFolder({	
 					name: model.name,
 					key: "-obj",
-					folderLabel: "　Toys",
+					folderLabel: "　 Toys",
 					label: model.name,
 				})
-			} else if(model.name.match(/^[0-9]{9}/)) {
-				const match = model.name.match(/^([0-9]+)-(.*)/)
+			} else if(model.name.match(/[0-9]{9}-001-/)) {
+				const match = model.name.match(/([0-9]+)-001-(.*)/)
 				const number = parseInt(match[1], 10)
 				const sub = match[2]
 				const o = indexJson.friends.find(s => s.id === number)
 				addFolder({	
 					name: model.name,
 					key: "friends",
-					folderLabel: "　Friends (Idle motions)",
+					folderLabel: "　 Friends (Idle motions)",
 					label: `　${number}: ${o.name}(${sub})`,
 					step: 10 * 1000,
 					sortKey: number,
@@ -168,7 +174,7 @@ export class CanvasController {
 				addFolder({	
 					name: model.name,
 					key: "other",
-					folderLabel: "　　Other",
+					folderLabel: "　 Other",
 				})
 			}
 		}
@@ -176,8 +182,7 @@ export class CanvasController {
 		subfolders.sort((a, b) => a.sortKey - b.sortKey)
 		controls.sort((a, b) => a.sortKey - b.sortKey)
 		for(const folder of subfolders) {
-			const f = folder.obj.folder = folder.gui.addFolder(folder.label)
-			if(folder.sortKey != 0) f.close()
+			const f = folder.obj.folder = folder.gui.addFolder(folder.label).close()
 		}
 		for(const control of controls) {
 			control.obj.folder.add(control.obj, control.name).name(control.label)
@@ -200,9 +205,9 @@ export class CanvasController {
 		for(const s of this.modelFolder.controllersRecursive()) s.enable()
 	}
 
-	async loadModel(name) {
+	async loadModel(pathfbx) {
 		const group = new THREE.Group();
-		const path = ("./Animator/" + name + "/" + name + ".glb").replace("#", "%23");
+		const path = (pathfbx).replace(".fbx", ".glb").replace("#", "%23");
 		const { model, animations, cloned } = await this.modelFactory.loadModel(path)
 		group.add( model );
 		//group.add( cloned );
@@ -293,6 +298,7 @@ export class CanvasController {
 		renderer.outputEncoding = THREE.sRGBEncoding;
 		renderer.setSize(this.width, this.height); 
 		renderer.setPixelRatio( this.param.pixelRatio );
+		renderer.setClearColor(0x888888, 1)
 		this.renderer = renderer
 
 	}
@@ -373,6 +379,7 @@ export class CanvasController {
 	}
 
 	render() {
+		this.renderer.clear()
 		this.renderer.render(this.scene, this.camera)
 	}
 

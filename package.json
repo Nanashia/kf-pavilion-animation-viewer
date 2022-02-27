@@ -6,12 +6,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production && node build-json.mjs",
     "start": "webpack-dev-server --mode=development",
-    "start-prod": "webpack-dev-server --mode=production"
+    "start-prod": "webpack-dev-server --mode=production",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "lil-gui": "^0.16.1",
     "three": "^0.137.5",
     "webpack": "^5.68.0",

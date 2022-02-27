@@ -60,6 +60,7 @@ export class Animator {
     detectChannel(name) {
         const prefixes = [
             "ani_",
+            "ani-",
             "ex_",
             "great_ex_",
 
@@ -83,9 +84,9 @@ export class Animator {
             return "main"
         }
 
-
-        if(name.match(/[0-9]{9}-[0-9b]+$/g)) {
-            return "main"
+        const match = name.match(/([0-9]{9}-(?:sp-?[0-9]{1,2}|ex-?[0-9]{1,2}|[a-z]+))-[0-9b]{1,2}$/)
+        if(match) {
+            return match[1]
         }
 
         return name
@@ -117,7 +118,7 @@ export class Animator {
                     continue
                 }
 
-                if(a.name.match(/(_|-|sp)0?1$/)) {
+                if(a.name.match(/(_|-|sp)0?0?1$/)) {
                     this.play(a.name)
                     continue
                 }
