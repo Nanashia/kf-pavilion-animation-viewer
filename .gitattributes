@@ -1,2 +1,3 @@
 Texture2D/*.png filter=lfs diff=lfs merge=lfs -text
-GameObject filter=lfs diff=lfs merge=lfs -text
+GameObject/*/*.glb filter=lfs diff=lfs merge=lfs -text
+GameObject/*/*.json filter=lfs diff=lfs merge=lfs -text
